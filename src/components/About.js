@@ -28,7 +28,7 @@ const About = () => {
                   Ingénieur logiciel full-stack .
                 </h3>
                 <p>
-                  Passionné par le DevOps et l'automatisation. Expérimenté dans la mise en place de pipelines CI/CD, le déploiement de conteneurs avec Docker et Kubernetes.
+                  Passionné par le DevOps et l&#39;automatisation. Expérimenté dans la mise en place de pipelines CI/CD, le déploiement de conteneurs avec Docker et Kubernetes.
                 </p>
                 <div className="row">
                   <div className="col-auto">
@@ -228,7 +228,7 @@ const About = () => {
                   <label>VIRTUAL-ERA | Tunis | 05/2025 – 09/2025</label>
                   <div className="rb-time">Temps Plein</div>
                   <p>
-Conception d'une solution de gestion d'inventaire avec une application mobile (Flutter) et une plateforme web (Spring Boot).
+Conception d&#39;une solution de gestion d&#39;inventaire avec une application mobile (Flutter) et une plateforme web (Spring Boot).
                   </p>
                 </div>
               </div>
@@ -248,7 +248,7 @@ Conception d'une solution de gestion d'inventaire avec une application mobile (F
                   <label>ECOLOBLOC | En ligne | 2024</label>
                   <div className="rb-time">Projet Personnel</div>
                   <p>
-Création d'un site web pour une entreprise de matériaux écologiques brevetés (ECOLOBLOC).
+Création d&#39;un site web pour une entreprise de matériaux écologiques brevetés (ECOLOBLOC).
                   </p>
                 </div>
               </div>
@@ -263,11 +263,11 @@ Création d'un site web pour une entreprise de matériaux écologiques brevetés
               </div>
               <div className="col-sm-9 col-md-9 col-xl-10">
                 <div className="rb-right">
-                  <h6>Stage de fin d'études</h6>
+                  <h6>Stage de fin d&#39;études</h6>
                   <label>Latécoère | Mourouj | 01/2023 – 06/2023</label>
                   <div className="rb-time">Temps Plein</div>
                   <p>
-Développement d'une application web pour la gestion du paramétrage des articles sous SAP (Django, Python).
+Développement d&#39;une application web pour la gestion du paramétrage des articles sous SAP (Django, Python).
                   </p>
                 </div>
               </div>
@@ -286,7 +286,7 @@ Développement d'une application web pour la gestion du paramétrage des article
                   <label>Radio Tunisienne (ERT) | Tunis | 01/2020 – 02/2020</label>
                   <div className="rb-time">Temps Plein</div>
                   <p>
-Conception et développement d'une application web de gestion des stagiaires (Angular, Spring Boot).
+Conception et développement d&#39;une application web de gestion des stagiaires (Angular, Spring Boot).
                   </p>
                 </div>
               </div>
@@ -301,7 +301,7 @@ Conception et développement d'une application web de gestion des stagiaires (An
             </div>
             <div className="col-sm-9 col-md-9 col-xl-10">
               <div className="rb-right">
-                <h6>Stage d'initiation</h6>
+                <h6>Stage d&#39;initiation</h6>
                 <label>Office National de la Télédiffusion (ONT) | 01/2019 – 02/2019 | Tunis</label>
                 <div className="rb-time">Temps Plein</div>
                 <p>

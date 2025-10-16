@@ -3,7 +3,7 @@ import { Fragment, useEffect, useState } from "react";
 import PreLoader from "../src/layout/PreLoader";
 import "../styles/glitch.css";
 import "../styles/globals.css";
-import "../styles/style.css"; // Import the global style sheet
+import "/static/css/style.css"; // Import the global style sheet
 
 // Import fonts from next/font/google
 import { Rubik, Playfair_Display } from 'next/font/google';

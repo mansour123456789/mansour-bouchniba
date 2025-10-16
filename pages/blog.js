@@ -55,7 +55,7 @@ Je vous dirai la vérité sur le design dans les 60 prochaines secondes.
                   <h6>
                     <Link href="/single-blog">
                       <a>
-Dix raisons époustouflantes pour lesquelles le design utilise cette technique pour l'exposition.
+Dix raisons époustouflantes pour lesquelles le design utilise cette technique pour l&#39;exposition.
                       </a>
                     </Link>
                   </h6>
@@ -118,7 +118,7 @@ Cinq preuves solides que la participation au design est bonne pour le développe
                   <h6>
                     <Link href="/single-blog">
                       <a>
-Pourquoi la natation est aussi une autre chose importante pour l'homme.
+Pourquoi la natation est aussi une autre chose importante pour l&#39;homme.
                       </a>
                     </Link>
                   </h6>

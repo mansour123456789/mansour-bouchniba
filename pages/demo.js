@@ -1,7 +1,7 @@
 import Head from "next/head";
+import Image from "next/image";
 import Link from "next/link";
 import { Fragment } from "react";
-
 const Demo = () => {
   return (
     <Fragment>
@@ -102,7 +102,7 @@ const Demo = () => {
                   <Link href="/blog">
                     <a target="_blank">
                       <div className="product-img">
-                        <img src="demo/img/dark-blog.jpg" title="" alt="" />
+                        <Image src="demo/img/dark-blog.jpg" title="" alt="" />
                       </div>
                       <div className="product-info">
                         <h2>Blog List</h2>
@@ -117,7 +117,7 @@ const Demo = () => {
                   <Link href="/single-blog">
                     <a target="_blank">
                       <div className="product-img">
-                        <img
+                        <Image
                           src="demo/img/dark-blog-single.jpg"
                           title=""
                           alt=""
