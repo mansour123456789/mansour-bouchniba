@@ -1,22 +1,22 @@
 import Head from "next/head";
 import { Fragment, useEffect, useState } from "react";
 import PreLoader from "../src/layout/PreLoader";
-import "../styles/glitch.css";
-import "../styles/globals.css";
+import "/styles/glitch.css";
+import "/styles/globals.css";
 import "/static/css/style.css"; // Import the global style sheet
 
-// Import fonts from next/font/google
-import { Rubik, Playfair_Display } from 'next/font/google';
+// // Import fonts from next/font/google
+// import { Rubik, Playfair_Display } from 'next/font/google';
 
-// Instantiate the fonts
-const rubik = Rubik({
-  subsets: ['latin'],
-  variable: '--font-rubik', // Optional: for CSS variables
-});
-const playfairDisplay = Playfair_Display({
-  subsets: ['latin'],
-  variable: '--font-playfair-display', // Optional: for CSS variables
-});
+// // Instantiate the fonts
+// const rubik = Rubik({
+//   subsets: ['latin'],
+//   variable: '--font-rubik', // Optional: for CSS variables
+// });
+// const playfairDisplay = Playfair_Display({
+//   subsets: ['latin'],
+//   variable: '--font-playfair-display', // Optional: for CSS variables
+// });
 
 function MyApp({ Component, pageProps }) {
   const [load, setLoad] = useState(true);
