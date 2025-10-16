@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Fragment, useEffect, useState } from "react";
 import { activeSection } from "../utilits";
 const Header = ({ blog }) => {
@@ -7,7 +8,7 @@ const Header = ({ blog }) => {
     if (!blog) {
       activeSection();
     }
-  }, []);
+  }, [blog]);
   return (
     <Fragment>
       <div className="mob-header">
@@ -38,7 +39,7 @@ const Header = ({ blog }) => {
           <div className="hl-top">
             <div className="hl-logo">
               <div className="img">
-                <img src="static/img/about-me.jpg" title="" alt="" />
+                <Image src="/static/img/about-me.jpg" alt="About Me" width={100} height={100} />
               </div>
               <h5>bouchniba Mansour</h5>
             </div>
@@ -106,7 +107,7 @@ const MenuWithBlog = () => {
     window.addEventListener("scroll", () =>
       document.querySelector(".blog").classList.add("active")
     );
-  });
+  }, []);
 
   return (
     <Fragment>

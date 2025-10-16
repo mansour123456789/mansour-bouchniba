@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import Layout from "../src/layout/Layout";
 import { getPagination, pagination } from "../src/utilits";
@@ -10,7 +11,7 @@ const Blog = () => {
     pagination(".blog-list-item", sort, active);
     let list = document.querySelectorAll(".blog-list-item");
     setState(getPagination(list.length, sort));
-  }, [active]);
+  }, [active, sort]);
 
   return (
     <Layout blog>
@@ -25,7 +26,7 @@ const Blog = () => {
                 <div className="blog-img">
                   <Link href="/single-blog">
                     <a>
-                      <img src="static/img/blog-1.jpg" title="" alt="" />
+                      <Image src="/static/img/blog-1.jpg" alt="Blog Image 1" width={400} height={300} />
                     </a>
                   </Link>
                 </div>
@@ -46,7 +47,7 @@ Je vous dirai la vérité sur le design dans les 60 prochaines secondes.
                 <div className="blog-img">
                   <Link href="/single-blog">
                     <a>
-                      <img src="static/img/blog-2.jpg" title="" alt="" />
+                      <Image src="/static/img/blog-2.jpg" alt="Blog Image 2" width={400} height={300} />
                     </a>
                   </Link>
                 </div>
@@ -55,7 +56,7 @@ Je vous dirai la vérité sur le design dans les 60 prochaines secondes.
                   <h6>
                     <Link href="/single-blog">
                       <a>
-Dix raisons époustouflantes pour lesquelles le design utilise cette technique pour l'exposition.
+Dix raisons époustouflantes pour lesquelles le design utilise cette technique pour l&#39;exposition.
                       </a>
                     </Link>
                   </h6>
@@ -67,7 +68,7 @@ Dix raisons époustouflantes pour lesquelles le design utilise cette technique p
                 <div className="blog-img">
                   <Link href="/single-blog">
                     <a>
-                      <img src="static/img/blog-3.jpg" title="" alt="" />
+                      <Image src="/static/img/blog-3.jpg" alt="Blog Image 3" width={400} height={300} />
                     </a>
                   </Link>
                 </div>
@@ -76,7 +77,7 @@ Dix raisons époustouflantes pour lesquelles le design utilise cette technique p
                   <h6>
                     <Link href="/single-blog">
                       <a>
-Cinq preuves solides que la participation au design est bonne pour le développement de votre carrière.
+Cinq preuves solides que la participation au design est bonne pour le développement de votre carrière.&#39;
                       </a>
                     </Link>
                   </h6>
@@ -88,7 +89,7 @@ Cinq preuves solides que la participation au design est bonne pour le développe
                 <div className="blog-img">
                   <Link href="/single-blog">
                     <a>
-                      <img src="static/img/blog-6.jpg" title="" alt="" />
+                      <Image src="/static/img/blog-6.jpg" alt="Blog Image 6" width={400} height={300} />
                     </a>
                   </Link>
                 </div>
@@ -109,7 +110,7 @@ Cinq preuves solides que la participation au design est bonne pour le développe
                 <div className="blog-img">
                   <Link href="/single-blog">
                     <a>
-                      <img src="static/img/blog-5.jpg" title="" alt="" />
+                      <Image src="/static/img/blog-5.jpg" alt="Blog Image 5" width={400} height={300} />
                     </a>
                   </Link>
                 </div>
@@ -118,7 +119,7 @@ Cinq preuves solides que la participation au design est bonne pour le développe
                   <h6>
                     <Link href="/single-blog">
                       <a>
-Pourquoi la natation est aussi une autre chose importante pour l'homme.
+Pourquoi la natation est aussi une autre chose importante pour l&#39;homme.
                       </a>
                     </Link>
                   </h6>
@@ -130,7 +131,7 @@ Pourquoi la natation est aussi une autre chose importante pour l'homme.
                 <div className="blog-img">
                   <Link href="/single-blog">
                     <a>
-                      <img src="static/img/blog-4.jpg" title="" alt="" />
+                      <Image src="/static/img/blog-4.jpg" alt="Blog Image 4" width={400} height={300} />
                     </a>
                   </Link>
                 </div>

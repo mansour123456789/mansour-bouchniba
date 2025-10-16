@@ -4,7 +4,6 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        <title>Bouchniba - Mansour</title>
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link
           href="static/plugin/bootstrap/css/bootstrap.min.css"

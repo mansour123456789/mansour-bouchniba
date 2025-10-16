@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const Blog = () => {
   return (
@@ -17,7 +18,7 @@ const Blog = () => {
               <div className="blog-img">
                 
                   <a>
-                    <img src="static/img/scrum.jpg" title="" alt="" />
+                    <Image src="/static/img/scrum.jpg" alt="Scrum Certification" width={400} height={300} />
                   </a>
                
               </div>
@@ -38,7 +39,7 @@ const Blog = () => {
               <div className="blog-img">
               
                   <a>
-                    <img src="static/img/ace.jpg" title="" alt="" />
+                    <Image src="/static/img/ace.jpg" alt="ACE Multicloud Network Associate Certification" width={400} height={300} />
                   </a>
                
               </div>

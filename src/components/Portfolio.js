@@ -1,4 +1,5 @@
 import Isotope from "isotope-layout";
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 const Portfolio = () => {
   // Isotope
@@ -89,7 +90,7 @@ const Portfolio = () => {
                 <span>Symfony, PHP, MySQL</span>
               </div>
               <div className="portfolio-img">
-                <img src="static/img/m-portfolio-1.jpg" title="" alt="" />
+                <Image src="/static/img/m-portfolio-1.jpg" alt="Portfolio Image 1" width={400} height={300} />
                 <div className="portfolio-icon">
                   <a
                     href="static/img/m-portfolio-1.jpg"
@@ -109,7 +110,7 @@ const Portfolio = () => {
                 <span>Node.js, Express, WebSockets</span>
               </div>
               <div className="portfolio-img">
-                <img src="static/img/m-portfolio-2.jpg" title="" alt="" />
+                <Image src="/static/img/m-portfolio-2.jpg" alt="Portfolio Image 2" width={400} height={300} />
                 <div className="portfolio-icon">
                   <a
                     href="static/img/m-portfolio-2.jpg"
@@ -129,7 +130,7 @@ const Portfolio = () => {
                 <span>Angular, .NET, PayPal</span>
               </div>
               <div className="portfolio-img">
-                <img src="static/img/m-portfolio-3.jpg" title="" alt="" />
+                <Image src="/static/img/m-portfolio-3.jpg" alt="Portfolio Image 3" width={400} height={300} />
                 <div className="portfolio-icon">
                   <a
                     href="static/img/m-portfolio-3.jpg"
@@ -149,7 +150,7 @@ const Portfolio = () => {
                 <span>Django, Flutter, React, Kubernetes</span>
               </div>
               <div className="portfolio-img">
-                <img src="static/img/m-portfolio-4.jpg" title="" alt="" />
+                <Image src="/static/img/m-portfolio-4.jpg" alt="Portfolio Image 4" width={400} height={300} />
                 <div className="portfolio-icon">
                   <a
                     href="static/img/m-portfolio-4.jpg"

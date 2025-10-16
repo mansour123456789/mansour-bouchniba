@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { Fragment, useEffect, useState } from "react";
 import PreLoader from "../src/layout/PreLoader";
 import "../styles/glitch.css";
@@ -12,6 +13,9 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <Fragment>
+      <Head>
+        <title>Bouchniba - Mansour</title>
+      </Head>
       {load && <PreLoader />}
       <Component {...pageProps} />
     </Fragment>
