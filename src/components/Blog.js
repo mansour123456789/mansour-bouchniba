@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image"; // Import Image component
 
 const Blog = () => {
   return (
@@ -18,7 +17,7 @@ const Blog = () => {
               <div className="blog-img">
                 
                   <a>
-                    <Image src="/static/img/scrum.jpg" title="" alt="Scrum Certification" width={300} height={200} />
+                    <img src="static/img/scrum.jpg" title="" alt="" />
                   </a>
                
               </div>
@@ -39,7 +38,7 @@ const Blog = () => {
               <div className="blog-img">
               
                   <a>
-                    <Image src="/static/img/ace.jpg" title="" alt="ACE Multicloud Network Associate" width={300} height={200} />
+                    <img src="static/img/ace.jpg" title="" alt="" />
                   </a>
                
               </div>

@@ -63,7 +63,7 @@ data-nav-tooltip="Contact"
             <div className="contact-info">
 <h4>Quelle est votre histoire ? Contactez-moi</h4>
 <p>
-Toujours disponible pour du freelance si le bon projet se présente, n&#39;hésitez pas à me contacter.
+Toujours disponible pour du freelance si le bon projet se présente, n'hésitez pas à me contacter.
               </p>
               <ul>
                 <li className="media">
@@ -180,7 +180,7 @@ Message envoyé avec succès
                       className="text-danger"
                       style={{ display: "none" }}
                     >
-L&#39;envoi du message a échoué
+L'envoi du message a échoué
                     </span>
                   </div>
                 </div>

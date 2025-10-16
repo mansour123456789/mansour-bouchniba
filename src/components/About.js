@@ -1,5 +1,3 @@
-import Image from "next/image"; // Import Image component
-
 const About = () => {
   return (
     <section
@@ -13,7 +11,7 @@ const About = () => {
             <div className="about-me">
               <div className="img">
                 <div className="img-in">
-                  <Image src="/static/img/about-me.png" title="" alt="About Me" width={500} height={500} />
+                  <img src="static/img/about-me.png" title="" alt="" />
                 </div>
               </div>
             </div>
@@ -28,7 +26,7 @@ const About = () => {
                   Ingénieur logiciel full-stack .
                 </h3>
                 <p>
-                  Passionné par le DevOps et l&#39;automatisation. Expérimenté dans la mise en place de pipelines CI/CD, le déploiement de conteneurs avec Docker et Kubernetes.
+                  Passionné par le DevOps et l’automatisation. Expérimenté dans la mise en place de pipelines CI/CD, le déploiement de conteneurs avec Docker et Kubernetes.
                 </p>
                 <div className="row">
                   <div className="col-auto">
@@ -219,7 +217,7 @@ const About = () => {
             <div className="row">
               <div className="col-sm-3 col-md-3 col-xl-2">
                 <div className="rb-left">
-                  <Image src="/static/img/logo.jfif" title="" alt="Company Logo" width={100} height={100} />
+                  <img src="static/img/logo.jfif" title="" alt="" />
                 </div>
               </div>
               <div className="col-sm-9 col-md-9 col-xl-10">
@@ -228,7 +226,7 @@ const About = () => {
                   <label>VIRTUAL-ERA | Tunis | 05/2025 – 09/2025</label>
                   <div className="rb-time">Temps Plein</div>
                   <p>
-Conception d&#39;une solution de gestion d&#39;inventaire avec une application mobile (Flutter) et une plateforme web (Spring Boot).
+Conception d’une solution de gestion d’inventaire avec une application mobile (Flutter) et une plateforme web (Spring Boot).
                   </p>
                 </div>
               </div>
@@ -239,7 +237,7 @@ Conception d&#39;une solution de gestion d&#39;inventaire avec une application m
             <div className="row">
               <div className="col-sm-3 col-md-3 col-xl-2">
                 <div className="rb-left">
-                  <Image src="/static/img/logo4.png" title="" alt="Company Logo" width={100} height={100} />
+                  <img src="static/img/logo4.png" title="" alt="" />
                 </div>
               </div>
               <div className="col-sm-9 col-md-9 col-xl-10">
@@ -258,16 +256,16 @@ Création d&#39;un site web pour une entreprise de matériaux écologiques breve
             <div className="row">
               <div className="col-sm-3 col-md-3 col-xl-2">
                 <div className="rb-left">
-                  <Image src="/static/img/logo2.jfif" title="" alt="Company Logo" width={100} height={100} />
+                  <img src="static/img/logo2.jfif" title="" alt="" />
                 </div>
               </div>
               <div className="col-sm-9 col-md-9 col-xl-10">
                 <div className="rb-right">
-                  <h6>Stage de fin d&#39;études</h6>
+                  <h6>Stage de fin d’études</h6>
                   <label>Latécoère | Mourouj | 01/2023 – 06/2023</label>
                   <div className="rb-time">Temps Plein</div>
                   <p>
-Développement d&#39;une application web pour la gestion du paramétrage des articles sous SAP (Django, Python).
+Développement d’une application web pour la gestion du paramétrage des articles sous SAP (Django, Python).
                   </p>
                 </div>
               </div>
@@ -277,7 +275,7 @@ Développement d&#39;une application web pour la gestion du paramétrage des art
             <div className="row">
               <div className="col-sm-3 col-md-3 col-xl-2">
                 <div className="rb-left">
-                  <Image src="/static/img/logo1.jfif" title="" alt="Company Logo" width={100} height={100} />
+                  <img src="static/img/logo1.jfif" title="" alt="" />
                 </div>
               </div>
               <div className="col-sm-9 col-md-9 col-xl-10">
@@ -286,7 +284,7 @@ Développement d&#39;une application web pour la gestion du paramétrage des art
                   <label>Radio Tunisienne (ERT) | Tunis | 01/2020 – 02/2020</label>
                   <div className="rb-time">Temps Plein</div>
                   <p>
-Conception et développement d&#39;une application web de gestion des stagiaires (Angular, Spring Boot).
+Conception et développement d’une application web de gestion des stagiaires (Angular, Spring Boot).
                   </p>
                 </div>
               </div>
@@ -296,16 +294,16 @@ Conception et développement d&#39;une application web de gestion des stagiaires
           <div className="row">
             <div className="col-sm-3 col-md-3 col-xl-2">
               <div className="rb-left">
-                <Image src="/static/img/logo3.jfif" title="" alt="Company Logo" width={100} height={100} />
+                <img src="static/img/logo3.jfif" title="" alt="" />
               </div>
             </div>
             <div className="col-sm-9 col-md-9 col-xl-10">
               <div className="rb-right">
-                <h6>Stage d&#39;initiation</h6>
+                <h6>Stage d’initiation</h6>
                 <label>Office National de la Télédiffusion (ONT) | 01/2019 – 02/2019 | Tunis</label>
                 <div className="rb-time">Temps Plein</div>
                 <p>
-Découverte du milieu professionnel et pratiques de maintenance informatique. Missions : assistance technique, installation et configuration de matériel, maintenance et dépannage.
+                  Découverte du milieu professionnel et pratiques de maintenance informatique. Missions : assistance technique, installation et configuration de matériel, maintenance et dépannage.
                 </p>
               </div>
             </div>

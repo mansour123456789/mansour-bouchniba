@@ -1,6 +1,5 @@
 import Isotope from "isotope-layout";
 import { useEffect, useRef, useState } from "react";
-import Image from "next/image"; // Import Image component
 const Portfolio = () => {
   // Isotope
   const isotope = useRef();
@@ -90,7 +89,7 @@ const Portfolio = () => {
                 <span>Symfony, PHP, MySQL</span>
               </div>
               <div className="portfolio-img">
-                <Image src="/static/img/m-portfolio-1.jpg" title="" alt="Portfolio Item 1" width={400} height={250} />
+                <img src="static/img/m-portfolio-1.jpg" title="" alt="" />
                 <div className="portfolio-icon">
                   <a
                     href="static/img/m-portfolio-1.jpg"
@@ -110,7 +109,7 @@ const Portfolio = () => {
                 <span>Node.js, Express, WebSockets</span>
               </div>
               <div className="portfolio-img">
-                <Image src="/static/img/m-portfolio-2.jpg" title="" alt="Portfolio Item 2" width={400} height={250} />
+                <img src="static/img/m-portfolio-2.jpg" title="" alt="" />
                 <div className="portfolio-icon">
                   <a
                     href="static/img/m-portfolio-2.jpg"
@@ -130,7 +129,7 @@ const Portfolio = () => {
                 <span>Angular, .NET, PayPal</span>
               </div>
               <div className="portfolio-img">
-                <Image src="/static/img/m-portfolio-3.jpg" title="" alt="Portfolio Item 3" width={400} height={250} />
+                <img src="static/img/m-portfolio-3.jpg" title="" alt="" />
                 <div className="portfolio-icon">
                   <a
                     href="static/img/m-portfolio-3.jpg"
@@ -150,7 +149,7 @@ const Portfolio = () => {
                 <span>Django, Flutter, React, Kubernetes</span>
               </div>
               <div className="portfolio-img">
-                <Image src="/static/img/m-portfolio-4.jpg" title="" alt="Portfolio Item 4" width={400} height={250} />
+                <img src="static/img/m-portfolio-4.jpg" title="" alt="" />
                 <div className="portfolio-icon">
                   <a
                     href="static/img/m-portfolio-4.jpg"

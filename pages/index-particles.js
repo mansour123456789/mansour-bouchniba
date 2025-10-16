@@ -2,13 +2,13 @@ import dynamic from "next/dynamic";
 import About from "../src/components/About";
 import Blog from "../src/components/Blog";
 import Contact from "../src/components/Contact";
+import ParticlesBackground from "../src/components/ParticlesBackground";
 import Services from "../src/components/Services";
-import TypingAnimation from "../src/components/TypingAnimation";
 import Layout from "../src/layout/Layout";
 const Portfolio = dynamic(() => import("../src/components/Portfolio"), {
   ssr: false,
 });
-const Index = () => {
+const IndexParticles = () => {
   return (
     <Layout>
       <section
@@ -17,22 +17,25 @@ const Index = () => {
         className="pp-section pp-scrollable"
       >
         <div className="home-banner">
+          {/* <div id="particles-box" className="particles" /> */}
+          <ParticlesBackground />
           <div className="container">
             <div className="row full-screen align-items-center">
               <div className="col-lg-6">
                 <div className="type-box">
-                  <h6>Bonjour, je suis</h6>
-                  <h1 className="font-alt">Bouchniba Mansour</h1>
+                  <h6>Hello, I am</h6>
+                  <h1 className="font-alt">Sergio Gadot</h1>
                   <p className="lead">
-                    Je suis passionné <TypingAnimation />
+                    I Am Passionate <span id="type-it" />
                   </p>
                   <p className="desc">
-                    Je conçois et développe des services pour des clients de toutes tailles,
-                    spécialisé dans la création de sites Web élégants et modernes, de services Web et Mobile.
+                    I design and develop services for customers of all sizes,
+                    specializing in creating stylish, modern websites, web
+                    services and online stores.
                   </p>
                   <div className="btn-bar">
-                    <a className="px-btn px-btn-theme" href="/Bouchniba-Mansour.pdf" download="Bouchniba-Mansour.pdf">
-                      Télécharger CV
+                    <a className="px-btn px-btn-theme" href="#">
+                      Donwload CV
                     </a>
                   </div>
                 </div>
@@ -54,7 +57,9 @@ const Index = () => {
       <Services />
       {/* End Services */}
       {/* Portfolio */}
-    
+      <Portfolio />
+      {/* End Portfolio */}
+      {/* Blog */}
       <Blog />
       {/* End Blog */}
       {/* Contact us */}
@@ -62,4 +67,4 @@ const Index = () => {
     </Layout>
   );
 };
-export default Index;
+export default IndexParticles;

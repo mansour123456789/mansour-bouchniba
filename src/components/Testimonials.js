@@ -1,5 +1,4 @@
 import { Fragment } from "react";
-import Image from "next/image";
 import SwiperCore, {
   Autoplay,
   EffectFade,
@@ -35,7 +34,7 @@ const Testimonials = () => {
       <Swiper {...props}>
         <SwiperSlide className="testimonial-01 media">
           <div className="avatar">
-            <Image src="/static/img/team-1.jpg" title="" alt="Team Member 1" width={100} height={100} />
+            <img src="static/img/team-1.jpg" title="" alt="" />
           </div>
           <div className="media-body">
             <p>
@@ -49,7 +48,7 @@ const Testimonials = () => {
         </SwiperSlide>
         <SwiperSlide className="testimonial-01 media">
           <div className="avatar">
-            <Image src="/static/img/team-2.jpg" title="" alt="Team Member 2" width={100} height={100} />
+            <img src="static/img/team-2.jpg" title="" alt="" />
           </div>
           <div className="media-body">
             <p>
@@ -63,7 +62,7 @@ const Testimonials = () => {
         </SwiperSlide>
         <SwiperSlide className="testimonial-01 media">
           <div className="avatar">
-            <Image src="/static/img/team-3.jpg" title="" alt="Team Member 3" width={100} height={100} />
+            <img src="static/img/team-3.jpg" title="" alt="" />
           </div>
           <div className="media-body">
             <p>
@@ -77,7 +76,7 @@ const Testimonials = () => {
         </SwiperSlide>
         <SwiperSlide className="testimonial-01 media">
           <div className="avatar">
-            <Image src="/static/img/team-1.jpg" title="" alt="Team Member 1" width={100} height={100} />
+            <img src="static/img/team-1.jpg" title="" alt="" />
           </div>
           <div className="media-body">
             <p>
