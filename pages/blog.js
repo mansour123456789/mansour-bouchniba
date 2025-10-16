@@ -10,7 +10,7 @@ const Blog = () => {
     pagination(".blog-list-item", sort, active);
     let list = document.querySelectorAll(".blog-list-item");
     setState(getPagination(list.length, sort));
-  }, [active]);
+  }, [active, sort]);
 
   return (
     <Layout blog>

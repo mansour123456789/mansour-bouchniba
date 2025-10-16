@@ -3,6 +3,21 @@ import { Fragment, useEffect, useState } from "react";
 import PreLoader from "../src/layout/PreLoader";
 import "../styles/glitch.css";
 import "../styles/globals.css";
+import "../styles/style.css"; // Import the global style sheet
+
+// Import fonts from next/font/google
+import { Rubik, Playfair_Display } from 'next/font/google';
+
+// Instantiate the fonts
+const rubik = Rubik({
+  subsets: ['latin'],
+  variable: '--font-rubik', // Optional: for CSS variables
+});
+const playfairDisplay = Playfair_Display({
+  subsets: ['latin'],
+  variable: '--font-playfair-display', // Optional: for CSS variables
+});
+
 function MyApp({ Component, pageProps }) {
   const [load, setLoad] = useState(true);
   useEffect(() => {
@@ -16,48 +31,14 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>Bouchniba - Mansour</title>
         {/* <!-- Favicon --> */}
-
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-        {/* <!-- plugin CSS --> */}
-        <link
-          href="static/plugin/bootstrap/css/bootstrap.min.css"
-          rel="stylesheet"
-        />
-        <link
-          href="static/plugin/font-awesome/css/all.min.css"
-          rel="stylesheet"
-        />
-        <link href="static/plugin/et-line/style.css" rel="stylesheet" />
-        <link
-          href="static/plugin/themify-icons/themify-icons.css"
-          rel="stylesheet"
-        />
-        <link
-          href="static/plugin/owl-carousel/css/owl.carousel.min.css"
-          rel="stylesheet"
-        />
-        <link
-          href="static/plugin/magnific/magnific-popup.css"
-          rel="stylesheet"
-        />
-        <link
-          href="static/plugin/scroll/jquery.mCustomScrollbar.min.css"
-          rel="stylesheet"
-        />
-        {/* <!-- theme css --> */}
-        <link href="static/css/style.css" rel="stylesheet" />
-
-        <link
-          href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-          rel="stylesheet"
-        />
+        {/* Fonts are now handled by next/font, so no need for <link> tags for fonts */}
       </Head>
-      {load && <PreLoader />}
-      <Component {...pageProps} />
+      {/* Apply font classes to the main component */}
+      <div className={`${rubik.variable} ${playfairDisplay.variable}`}>
+        {load && <PreLoader />}
+        <Component {...pageProps} />
+      </div>
     </Fragment>
   );
 }
