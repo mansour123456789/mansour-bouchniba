@@ -18,7 +18,7 @@ const Blog = () => {
               <div className="blog-img">
                 
                   <a>
-                    <Image src="/static/img/scrum.jpg" alt="Scrum Certification" width={400} height={300} />
+                    <Image src="/static/img/scrum.jpg" alt="Scrum Certification" width={500} height={400} />
                   </a>
                
               </div>
@@ -39,7 +39,7 @@ const Blog = () => {
               <div className="blog-img">
               
                   <a>
-                    <Image src="/static/img/ace.jpg" alt="ACE Multicloud Network Associate Certification" width={400} height={300} />
+                    <Image src="/static/img/ace.jpg" alt="ACE Multicloud Network Associate Certification" width={500} height={400} />
                   </a>
                
               </div>
