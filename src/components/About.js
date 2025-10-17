@@ -219,7 +219,7 @@ const About = () => {
             <div className="row">
               <div className="col-sm-3 col-md-3 col-xl-2">
                 <div className="rb-left">
-                  <Image src="/static/img/logo.jfif" alt="Company Logo" width={100} height={100} />
+                  <Image src="/static/img/logo.jpg" alt="Company Logo" width={100} height={100} />
                 </div>
               </div>
               <div className="col-sm-9 col-md-9 col-xl-10">
@@ -258,7 +258,7 @@ Création d&#39;un site web pour une entreprise de matériaux écologiques breve
             <div className="row">
               <div className="col-sm-3 col-md-3 col-xl-2">
                 <div className="rb-left">
-                  <Image src="/static/img/logo2.jfif" alt="Company Logo" width={100} height={100} />
+                  <Image src="/static/img/logo2.jpg" alt="Company Logo" width={100} height={100} />
                 </div>
               </div>
               <div className="col-sm-9 col-md-9 col-xl-10">
@@ -277,7 +277,7 @@ Développement d’une application web pour la gestion du paramétrage des artic
             <div className="row">
               <div className="col-sm-3 col-md-3 col-xl-2">
                 <div className="rb-left">
-                  <Image src="/static/img/logo1.jfif" alt="Company Logo" width={100} height={100} />
+                  <Image src="/static/img/logo1.jpg" alt="Company Logo" width={100} height={100} />
                 </div>
               </div>
               <div className="col-sm-9 col-md-9 col-xl-10">
@@ -296,7 +296,7 @@ Conception et développement d’une application web de gestion des stagiaires (
           <div className="row">
             <div className="col-sm-3 col-md-3 col-xl-2">
               <div className="rb-left">
-                <Image src="/static/img/logo3.jfif" alt="Company Logo" width={100} height={100} />
+                <Image src="/static/img/logo3.jpg" alt="Company Logo" width={100} height={100} />
               </div>
             </div>
             <div className="col-sm-9 col-md-9 col-xl-10">
