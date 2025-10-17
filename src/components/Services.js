@@ -188,7 +188,7 @@ Application permettant aux clients de publier des demandes de services (plomberi
                 <p>
                   Une plateforme mobile de recrutement complète, développée avec Ionic pour une interface utilisateur réactive et intuitive sur appareils mobiles, et Django pour un backend puissant et sécurisé. Elle offre des fonctionnalités clés telles que la publication et la gestion des offres d&#39;emploi, le suivi détaillé des candidatures, la messagerie intégrée pour la communication entre recruteurs et candidats .
                 </p>
-                <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" className="px-btn px-btn-theme">GitHub</a> {/* Placeholder GitHub link */}
+                <a href="https://github.com/mansour123456789" target="_blank" rel="noopener noreferrer" className="px-btn px-btn-theme">GitHub</a> {/* Placeholder GitHub link */}
               </div>
             </div>
           </div>
