@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="shortcut icon" type="image/x-icon" href="/static/img/about-me.jpg" />
         <link
           href="static/plugin/bootstrap/css/bootstrap.min.css"
           rel="stylesheet"
