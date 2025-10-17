@@ -18,7 +18,7 @@ const Blog = () => {
               <div className="blog-img">
                 
                   <a>
-                    <Image src="/static/img/scrum.jpg" alt="Scrum Certification" width={500} height={400} />
+                    <Image src="/public/static/img/scrum.JPG" alt="Scrum Certification" width={500} height={400} />
                   </a>
                
               </div>

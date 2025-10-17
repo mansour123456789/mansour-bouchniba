@@ -239,7 +239,7 @@ Conception d’une solution de gestion d’inventaire avec une application mobil
             <div className="row">
               <div className="col-sm-3 col-md-3 col-xl-2">
                 <div className="rb-left">
-                  <Image src="/static/img/logo4.png" alt="Company Logo" width={100} height={100} />
+                  <Image src="/public/static/img/Logo4.png" alt="Company Logo" width={100} height={100} />
                 </div>
               </div>
               <div className="col-sm-9 col-md-9 col-xl-10">
