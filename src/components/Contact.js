@@ -1,52 +1,32 @@
-import emailjs from "emailjs-com";
 import { useState } from "react";
 const Contact = () => {
-const [mailData, setMailData] = useState({
+  const [mailData, setMailData] = useState({
     name: "",
     email: "",
     subject: "",
     message: "",
-    recipient: "mansboch@gmail.com", // Recipient email address
   });
-  const { name, email, message, subject } = mailData;
+  const { name, email, subject, message } = mailData;
   const [error, setError] = useState(null);
   const onChange = (e) =>
     setMailData({ ...mailData, [e.target.name]: e.target.value });
   const onSubmit = (e) => {
     e.preventDefault();
-    if (
-      name.length === 0 ||
-      email.length === 0 ||
-      message.length === 0 ||
-      subject.length === 0
-    ) {
+    if (name.length === 0 || email.length === 0 || message.length === 0 || subject.length === 0) {
       setError(true);
-      clearError();
+      setTimeout(() => setError(null), 2000);
     } else {
-      emailjs
-        .send(
-          "service_seruhwu", // service id
-          "template_21aw58z", // template id
-          mailData,
-          "Q3pccdLZhU-mZT7tQ" // public api
-        )
-        .then(
-          (response) => {
-            setError(false);
-            clearError();
-            // Reset form fields and ensure recipient is set
-            setMailData({ name: "", email: "", message: "", subject: "", recipient: "mansboch@gmail.com" });
-          },
-          (err) => {
-            console.log(err.text);
-          }
-        );
+      const recipient = "mansboch@gmail.com";
+      const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(
+        subject
+      )}&body=${encodeURIComponent(
+        `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+      )}`;
+      window.location.href = mailtoLink;
+      setMailData({ name: "", email: "", message: "", subject: "" });
+      setError(false);
+      setTimeout(() => setError(null), 2000);
     }
-  };
-  const clearError = () => {
-    setTimeout(() => {
-      setError(null);
-    }, 2000);
   };
   return (
     <section
@@ -69,7 +49,7 @@ Toujours disponible pour du freelance si le bon projet se présente, n&#39;hési
                 <li className="media">
                   <i className="ti-map" />
 <span className="media-body">
-                    20 rue bahar omen nkhilet ariana
+                    Tunis, Ariana
                   </span>
                 </li>
                 <li className="media">
@@ -86,18 +66,18 @@ Toujours disponible pour du freelance si le bon projet se présente, n&#39;hési
           <div className="col-lg-7 col-xl-8 m-15px-tb">
             <div className="contact-form">
 <h4>Laissez un message</h4>
-              <form id="contact-form" onSubmit={(e) => onSubmit(e)}>
+              <form id="contact-form" onSubmit={onSubmit}>
                 <div className="row">
                   <div className="col-md-6">
                     <div className="form-group">
                       <input
                         name="name"
-                        onChange={(e) => onChange(e)}
+                        onChange={onChange}
                         value={name}
                         id="name"
-placeholder="Nom *"
+                        placeholder="Nom *"
                         className={`form-control ${
-                          error ? (!name ? "invalid" : "") : ""
+                          error === true && !name ? "invalid" : ""
                         }`}
                         type="text"
                       />
@@ -107,12 +87,12 @@ placeholder="Nom *"
                     <div className="form-group">
                       <input
                         name="email"
-                        onChange={(e) => onChange(e)}
+                        onChange={onChange}
                         value={email}
                         id="email"
-placeholder="Email *"
+                        placeholder="Email *"
                         className={`form-control ${
-                          error ? (!email ? "invalid" : "") : ""
+                          error === true && !email ? "invalid" : ""
                         }`}
                         type="email"
                       />
@@ -122,12 +102,12 @@ placeholder="Email *"
                     <div className="form-group">
                       <input
                         name="subject"
-                        onChange={(e) => onChange(e)}
+                        onChange={onChange}
                         value={subject}
                         id="subject"
-placeholder="Sujet *"
+                        placeholder="Sujet *"
                         className={`form-control ${
-                          error ? (!subject ? "invalid" : "") : ""
+                          error === true && !subject ? "invalid" : ""
                         }`}
                         type="text"
                       />
@@ -137,51 +117,35 @@ placeholder="Sujet *"
                     <div className="form-group">
                       <textarea
                         name="message"
-                        onChange={(e) => onChange(e)}
+                        onChange={onChange}
                         value={message}
                         id="message"
-placeholder="Votre message *"
+                        placeholder="Votre message *"
                         rows={5}
                         className={`form-control ${
-                          error ? (!message ? "invalid" : "") : ""
+                          error === true && !message ? "invalid" : ""
                         }`}
                       />
                     </div>
                   </div>
                   <div className="col-md-12">
                     <div className="send">
-                      {/* <button
-                        onSubmit={(e) => onSubmit(e)}
-                        className="px-btn px-btn-theme"
-                        type="button"
-value="Envoyer"
-                      >
-                        {" "}
-                        send message
-                      </button> */}
-<input
+                      <input
                         className="px-btn px-btn-theme"
                         type="submit"
                         value="Envoyer le message"
                       />
                     </div>
-                    <span
-                      id="suce_message"
-                      className="text-success"
-                      style={{
-                        display:
-                          error !== null ? (!error ? "block" : "none") : "none",
-                      }}
-                    >
-Message envoyé avec succès
-                    </span>
-                    <span
-                      id="err_message"
-                      className="text-danger"
-                      style={{ display: "none" }}
-                    >
-L&#39;envoi du message a échoué
-                    </span>
+                    {error === false && (
+                      <span id="suce_message" className="text-success" style={{ display: "block" }}>
+                        Votre client de messagerie s'est ouvert.
+                      </span>
+                    )}
+                    {error === true && (
+                      <span id="err_message" className="text-danger" style={{ display: "block" }}>
+                        Veuillez remplir tous les champs.
+                      </span>
+                    )}
                   </div>
                 </div>
               </form>
