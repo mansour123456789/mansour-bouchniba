@@ -27,7 +27,7 @@ const Blog = () => {
                 <h6>
                   <Link href="https://www.credly.com/badges/1d747dd2-79f1-4774-9732-7aed06cd0ecc/linked_in?t=svzyv8">
                     <a>
-                     I am excited to share that I have successfully passed the Professional Scrum Master I (PSM I) certification from Scrum.org. With this certification I have proven a fundamental level of Scrum knowledge!
+                    Je suis ravi d’annoncer que j’ai réussi la certification Professional Scrum Master I (PSM I) délivrée par Scrum.org. Cette certification atteste de ma maîtrise des fondamentaux du cadre Scrum !
                     </a>
                   </Link>
                 </h6>
@@ -48,7 +48,7 @@ const Blog = () => {
                 <h6>
                  
                     <a>
-                     Fier détenteur de la certification ACE Multicloud Network Associate délivrée par Aviatrix. Cette certification atteste de ma maîtrise des fondamentaux du réseau cloud et de la sécurité en environnement multicloud (AWS, Azure, GCP, OCI)
+                     Fier détenteur de la certification ACE Multicloud Network Associate, délivrée par Aviatrix. Cette certification valide ma compréhension approfondie des principes fondamentaux du réseau cloud et de la sécurité dans un environnement multicloud englobant AWS, Azure, GCP et OCI.
                        </a>
                 
                 </h6>
