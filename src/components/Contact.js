@@ -138,7 +138,7 @@ Toujours disponible pour du freelance si le bon projet se présente, n&#39;hési
                     </div>
                     {error === false && (
                       <span id="suce_message" className="text-success" style={{ display: "block" }}>
-                        Votre client de messagerie s'est ouvert.
+                        Votre client de messagerie s&#39;est ouvert.
                       </span>
                     )}
                     {error === true && (
